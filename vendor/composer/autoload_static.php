@@ -22,6 +22,7 @@ class ComposerStaticInit0710fd3d36e2c06f2ee9e05eed2edeb8
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'Psr\\Clock\\' => 10,
         ),
         'M' => 
         array (
@@ -30,6 +31,10 @@ class ComposerStaticInit0710fd3d36e2c06f2ee9e05eed2edeb8
         'D' => 
         array (
             'Demo\\' => 5,
+        ),
+        'C' => 
+        array (
+            'Carbon\\' => 7,
         ),
     );
 
@@ -54,6 +59,10 @@ class ComposerStaticInit0710fd3d36e2c06f2ee9e05eed2edeb8
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
         ),
+        'Psr\\Clock\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/clock/src',
+        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
@@ -62,19 +71,9 @@ class ComposerStaticInit0710fd3d36e2c06f2ee9e05eed2edeb8
         array (
             0 => __DIR__ . '/../..' . '/src/Demo',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
-    );
-
-    public static $prefixesPsr0 = array (
-        'U' => 
+        'Carbon\\' => 
         array (
-            'UpdateHelper\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/kylekatarnls/update-helper/src',
-            ),
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
     );
 
@@ -92,8 +91,6 @@ class ComposerStaticInit0710fd3d36e2c06f2ee9e05eed2edeb8
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit0710fd3d36e2c06f2ee9e05eed2edeb8::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit0710fd3d36e2c06f2ee9e05eed2edeb8::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit0710fd3d36e2c06f2ee9e05eed2edeb8::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit0710fd3d36e2c06f2ee9e05eed2edeb8::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit0710fd3d36e2c06f2ee9e05eed2edeb8::$classMap;
 
         }, null, ClassLoader::class);
