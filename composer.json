@@ -2,7 +2,7 @@
     "name": "admin/lara_auto",
     "autoload": {
         "psr-4": {
-            "Admin\\LaraAuto\\": "src/"
+            "Demo\\": "./src/Demo"
         }
     },
     "authors": [
