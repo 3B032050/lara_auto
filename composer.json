@@ -11,5 +11,7 @@
             "email": "antory040512@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "monolog/monolog": "^3.4"
+    }
 }
