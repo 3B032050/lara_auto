@@ -1,0 +1,15 @@
+{
+    "name": "admin/lara_auto",
+    "autoload": {
+        "psr-4": {
+            "Admin\\LaraAuto\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "黃文輝",
+            "email": "antory040512@gmail.com"
+        }
+    ],
+    "require": {}
+}
